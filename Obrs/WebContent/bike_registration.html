@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration form</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="bike_registration.css">
+
+</head>
+<body>
+
+	<div class="amal">
+	<div class="head">
+	<h1> RIDE-NOW   BIKE RENTALS</h1>
+	<div class="form-box">
+	<div class="button-box">
+	<div id="btn"></div>
+	<button type="button" class="toggle-btn">Registration</button>
+</div>
+<form action="registerController"  method="get" id="login" class="input-group">
+	<input type="email" name="email_id" class="input-field" placeholder="Email" required>
+	<input type="text" name="name" class="input-field" placeholder="Name" required>
+	<input type="text" name="dl_no"class="input-field" placeholder="Driving license number" required>
+	<input type="text" name="ph_no" class="input-field" placeholder="Mobile number" required>
+<label for="location" class="location"><span style="font-size:13px;">Choose location*: </span></label>
+	<select name="location" id="location">
+    <option value="Bangalore">Bangalore</option>
+    <option value="mangalore">Mangalore</option>
+    <option value="udupi">Udupi</option>
+    <option value="moodbidri">Moodbidri</option>
+  </select>
+	<input type="password" name="password" class="input-field" placeholder="Password*" required>
+	<input type="password" name="npassword" class="input-field" placeholder="Confirm Password*" required>
+	<input type="text" name="s_quest" class="input-field" placeholder="Enter your secret question*" required>
+	<input type="text" name="s_ans" class="input-field" placeholder="Enter your secret answer*" required>
+	<button type="submit" value="RegisterController" class="submit-btn">Register</button>
+</form>
+</div>
+</div>
+</div>
+</body>
+</html>
